@@ -1,0 +1,50 @@
+.riddle-replay-header-refresher-container {
+    position: relative;
+}
+
+.riddle-replay-header-refresher-action-button {
+    background-color: #a0213e;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.riddle-replay-header-refresher-dropdown {
+    display: none;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    position: absolute;
+    background-color: #18181b;
+    color: white;
+    border: 2px solid #a1a0a0;
+    z-index: 1;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 28px;
+    width: 300px;
+    height: 300px;
+    padding: 10px; /* Adds padding inside the container */
+    box-sizing: border-box; /* Includes padding in width/height calculations */
+}
+
+.riddle-replay-header-refresher-dropdown textarea {
+    height: calc(100% - 22px);
+    width: calc(100%); /* Adjusts width to allow for padding */
+    resize: none;
+    margin-top: 0; /* Adjust if needed */
+    padding: 8px;
+    outline: none;
+}
+
+.riddle-replay-header-refresher-dropdown label {
+    display: block;
+    text-wrap: nowrap;
+    text-align: center;
+    position: relative;
+    bottom: 4px;
+}
